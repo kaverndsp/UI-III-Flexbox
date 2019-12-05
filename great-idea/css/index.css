@@ -22,6 +22,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	/* border: 1px solid grey; */
+	text-decoration:none;
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -31,8 +34,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
+/* ol, ul {
+	list-style: none; */
 }
 blockquote, q {
 	quotes: none;
@@ -49,18 +52,218 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	width: 1000px;
+	margin: 0% auto;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+	margin-bottom: 15px;
+	
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+header{
+	display:flex;
+	
+}
+
+nav{
+	display:flex;
+	justify-content:space-evenly;
+	width:80%;
+}
+
+header .logo {
+	float:right;
+	margin-left:20px;
+} 
+
+.middlesec{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	margin-top:40px;
+}
+
+.middlesec .middletext {
+
+	/* vertical-align: top; */
+	width: 50%;
+	font-size: 80px;
+	/* margin: 100px 0px; */
+	text-align: center;
+	/* padding: 0px 60px; */
+	
+}
+
+.middlesec .middletext h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: text-top;
+	font-size: 15px;
+	border: 1px solid black;
+}
+
+
+
+
+
+
+.container_2{
+	display:flex;
+	justify-content:space-between;
+}
+
+
+.container .textone {
+	
+	width: 45%;
+	margin: 2%;
+	padding: 25px 0; 
+	line-height: 20px;
+}
+
+.middle-img{
+	margin-left:60px;
+}
+.container .texttwo {
+	
+	width: 30%;
+	margin: 2%;	
+	padding: 25px 0px;	
+	line-height: 20px;	
+}
+
+
+footer {
+	margin:2%;
+	 
+}
+
+/* START OF SERVICES CSS */
+
+.headerclass{
+	display:flex;
+	
+}
+
+.navclass{
+	display:flex;
+	justify-content: space-between;
+	width:75%;
+	margin-top:20px;
+	color:grey;
+	
+	
+}
+
+
+
+.headimg{
+	width:25%;
+
+}
+.services-header-img{
+	width:100%;
+	margin-top: 30px;
+}
+
+.services{
+	display:flex;
+	flex-direction:column;
+	margin-bottom:8%;
+}
+
+.services p{
+	align-content: space-between;
+
+	line-height: 24px;
+
+}
+.services h2{
+	margin-top:40px;
+	
+}
+
+.main{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+
+.blocks{
+	display:flex;
+	flex-direction: column;
+	height:300px;
+	width:480px;
+	border:solid black 1px;
+	margin-bottom:5%;
+	background-color: lightgrey;
+	
+}
+
+.blocks h2{
+	font-size: 25px;
+	margin: 5%;
+}
+
+.blocks p{
+margin:5%;
+
+}
+
+.blocks a{
+	margin: 5%;
+	margin-top:7%;
+	border: 1px black solid;
+	border-radius: 25px;
+	width:200px;
+	height:80px;
+	padding-top: 10px;
+	word-spacing: 5px;
+	text-align:center;
+	background-color:white;
+	
+}
+
+.final{
+	display:flex;
+	
+}
+
+.facts{
+	display:flex;
+	flex-direction: column;
+	width:50%;
+	
+}
+
+.services-info-img{
+	width:50%;
+}
+
+.facts p{
+	line-height: 17px;
+}
+
+.facts ul{
+	line-height:40px ;
+	margin-left:20px;
+	margin-top: 85px;
+}
+
+footer{
+	display:flex;
+	justify-content: center;
+}
+
+footer div{
+	margin-top:90px;
+}
