@@ -22,6 +22,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	/* border: 1px solid grey; */
+	text-decoration:none;
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -49,18 +52,98 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	width: 1000px;
+	margin: 0% auto;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+	margin-bottom: 15px;
+	
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+header{
+	display:flex;
+	
+}
+
+nav{
+	display:flex;
+	justify-content:space-evenly;
+	width:80%;
+}
+
+header .logo {
+	float:right;
+	margin-left:20px;
+} 
+
+.middlesec{
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	margin-top:40px;
+}
+
+.middlesec .middletext {
+
+	/* vertical-align: top; */
+	width: 50%;
+	font-size: 80px;
+	/* margin: 100px 0px; */
+	text-align: center;
+	/* padding: 0px 60px; */
+	
+}
+
+.middlesec .middletext h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: text-top;
+	font-size: 15px;
+	border: 1px solid black;
+}
+
+
+
+
+
+
+.container_2{
+	display:flex;
+	justify-content:space-between;
+}
+
+
+.container .textone {
+	
+	width: 45%;
+	margin: 2%;
+	padding: 25px 0; 
+	line-height: 20px;
+}
+
+.middle-img{
+	margin-left:60px;
+}
+.container .texttwo {
+	
+	width: 30%;
+	margin: 2%;	
+	padding: 25px 0px;	
+	line-height: 20px;	
+}
+
+
+footer {
+	margin:2%;
+	 
+}
+
